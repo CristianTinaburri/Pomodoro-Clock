@@ -1,0 +1,49 @@
+html{
+  background: gray;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container{
+  text-align: center;
+}
+
+.data{
+  text-align: center;
+  margin: 0 auto;
+  width: 33%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h1{
+  font-size: 64px;
+}
+
+span,button{
+  font-size: 30px;
+}
+
+button{
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+h3{
+  font-size: 40px;
+}
+
+#minutes-display, #seconds-display, h3{
+  font-size: 60px;
+}
+
+.title-display{
+  margin: 20px;
+}
+
+#display-title{
+  font-size: 24px;
+  margin: 20px;
+}

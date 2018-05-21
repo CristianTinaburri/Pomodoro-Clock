@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Pomodoro Clock</title>
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Main Title -->
+    <h1 class="main-title">Pomodoro Clock</h1>
+
+    <!-- Container with Minutes to be modified -->
+    <div class="data">
+
+      <!-- Data Pause -->
+      <div class="pause-div">
+        <h4>Pause Minutes</h4>
+        <button id="less-pause" onclick="setMinutesButtonClickPauseMinus()">-</button>
+        <span id="pause">5</span>
+        <button id="plus-pause" onclick="setMinutesButtonClickPausePlus()">+</button>
+      </div>
+
+      <!-- Data Work -->
+      <div class="work-div">
+        <h4>Work Minutes</h4>
+        <button id="less-work" onclick="setMinutesButtonClickWorkMinus()">-</button>
+        <span id="work">25</span>
+        <button id="plus-work" onclick="setMinutesButtonClickWorkPlus()">+</button>
+      </div>
+    </div>
+
+    <!-- Display -->
+    <div class="display">
+      <h4 id="display-title">Work</h4>
+      <h3 class="title-display"><span id="minutes-display">25</span>:<span id="seconds-display">00</span></h3>
+      <button id="play-button" onclick="playButton()"> <i class="fas fa-play"></i> </button>
+      <button id="reset-button" onclick="resetButton()"> <i class="fas fa-redo"></i> </button>
+      <button id="pause-button" onclick="pauseButton()"> <i class="fas fa-pause"></i> </button>
+    </div>
+
+  </div>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!-- Javascript -->
+  <script src="js/javascript.js"></script>
+
+</body>
+</html>
